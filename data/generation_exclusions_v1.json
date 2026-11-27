@@ -1,0 +1,24 @@
+{
+  "generations_file": "generations_v1.jsonl",
+  "generations_sha256": "04c58bea6bd197a07132ccb2ab46055fcc1f665ee6634d6c15e806455a272c86",
+  "rule": "Replies that stop on finish_reason == 'length' (16,384-token cap) are excluded from self-tagging, judging and precision/recall, and reported separately as degenerate generations.",
+  "decided_by": "user (2026-11-26)",
+  "excluded": [
+    {
+      "candidate_id": "376bf3d3bebe9507b95ec5ac0b8f5539",
+      "stream_position": 81,
+      "sampling_category": "overconfidence",
+      "finish_reason": "length",
+      "completion_tokens": 16384,
+      "note": "Repetition loop: repeats 'Final Answer \\boxed{4.8} m' / 'Yes.' until the cap."
+    },
+    {
+      "candidate_id": "04e087f055cc14d66c3255e0b30910be",
+      "stream_position": 182,
+      "sampling_category": "playfulness",
+      "finish_reason": "length",
+      "completion_tokens": 16384,
+      "note": "Repetition loop: script collapses into 'I exist, I exist, ...' until the cap."
+    }
+  ]
+}
